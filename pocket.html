@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pocket.css">
+    <link rel="website icon" type="jpg" href="e9194b08-2543-4c20-83dd-5dca00b573e0-removebg-preview.png">
+    <link href="https://fonts.cdnfonts.com/css/agbalumo" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nitti" rel="stylesheet">
+    <title>Mercantile Shop | POCKET BOOKS</title>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <!--nav1-->
+    <nav class="navbar">
+        <div class="navigationbar">
+          <a href="Mercantile Shop.html" id="navbarlogo">
+              <img src="e9194b08-2543-4c20-83dd-5dca00b573e0-removebg-preview.png" alt="Logo" id="image"> Mercantile Shop
+          </a>
+          <div class="navbarsearch">
+            <input type="text" class="searchinput" placeholder="Search Mercantile">
+            <button class="searchbutton"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </nav>
+      <!--nav2-->
+      <nav class="navbar2">
+        <div class="navbarcontainer">
+            <a href="BOOKS.html" class="navbar-link">Books</a>
+            <a href="TOYS.html" class="navbar-link">Toys</a>
+            <a href="SALE.html" class="navbar-link">Top Sales </a>
+            <a href="SHOPRULES.html" class="navbar-link">Shop Rules</a>
+        </div>
+    </nav>
+
+
+      <!-- Slideshow -->
+      <div class="slideshow-container">
+
+        
+       <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <a href="pocket.html"> <!--LALAGYAN PA-->
+        <img src="POCKETBOOKS 2.png" style="width:100%">
+      </a>
+      </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <a href="Mercantile Shop.html">
+          <img src="shoprules.png" style="width:100%">
+        </a>
+        </div>
+  
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+        <br>
+
+      <div style="text-align: center;">
+       <span class="dot" onclick="currentSlide(1)"></span>
+       <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      
+       <!--slideshowjava-->      
+         <script>
+            let slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+       showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+       }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+
+
+           <h2>POCKET BOOKS</h2>
+
+           <div class="post-card3">
+               <img class="post-image3" src="2b558ae0ac7af127c6b710c03b1835e5.jpg" alt="Post Image">
+                <div class="post-content3">
+                    <div class="post-title3">Love Letters To My Dearest One by Buenaventura & Estrada</div>
+                    <div class="post-description3">Price: ₱35</div>
+                    <div class="button">
+                      <a href="BOOK1.html" class="button1">View</a>
+                </div>
+              </div>
+            </a>
+           </div>
+
+           <div class="post-card3">
+               <img class="post-image3" src="4e8d9a8d54f68612d0a0b9f0e2910b6e.jpg" alt="Post Image">
+                <div class="post-content3">
+                    <div class="post-title3">Love Letters | Mga Sulat ng Puso by Rolando David<br><br></div>
+                    <div class="post-description3">Price: ₱35</div>
+                    <div class="button">
+                      <a href="BOOK2.html" class="button1">View</a>
+                </div>
+              </div>
+            </a>
+           </div>
+
+           <div class="post-card3">
+               <img class="post-image3" src="846824b0afe705acb3787f03f1196557.jpg" alt="Post Image">
+                <div class="post-content3">
+                    <div class="post-title3">Science Dictionary by Adriano | Preloved<br><br></div>
+                    <div class="post-description3">Price: ₱55</div>
+                    <div class="button">
+                      <a href="BOOK3.html" class="button1">View</a>
+                </div>
+              </div>
+            </a>
+           </div>
+
+           <div class="post-card3">
+               <img class="post-image3" src="403385d162d88b7e29a51c41a5e38170.jpg" alt="Post Image">
+                <div class="post-content3">
+                    <div class="post-title3">Mathematics Dictionary by Adriano<br><br></div>
+                    <div class="post-description3">Price: ₱55</div>
+                    <div class="button">
+                      <a href="BOOK4.html" class="button1">View</a>
+                </div>
+              </div>
+            </a>
+           </div>      
+
+           <div class="post-card3">
+            <img class="post-image3" src="ph-11134207-7r98q-lprjvc1uxprvf4.jpg" alt="Post Image">
+             <div class="post-content3">
+                 <div class="post-title3">LETTERS for All Occasions | Everyday Handbooks by Myers</div>
+                 <div class="post-description3">Price: ₱55</div>
+                 <div class="buttonn">
+                   <a href="BOOK5.html" class="buttonnn">View</a>
+             </div>
+           </div>
+         </a>
+        </div>   
+           
+
+        <!--topproducts 2-->
+        <div class="post-card3">
+            <img class="post-image3" src="e9194b08-2543-4c20-83dd-5dca00b573e0-removebg-preview.png" alt="Post Image">
+             <div class="post-content3">
+                 <div class="post-title3">Not Available!!!<br><br></div>
+                 <div class="post-description3">Price: ₱</div>
+                 <div class="buttonn">
+                   <a href="" class="buttonnn">None</a>
+             </div>
+           </div>
+         </a>
+        </div>
+
+        <!--topproducts 3-->
+        <div class="post-card3">
+            <img class="post-image3" src="e9194b08-2543-4c20-83dd-5dca00b573e0-removebg-preview.png" alt="Post Image">
+             <div class="post-content3">
+                 <div class="post-title3">Not Available!!!<br><br></div>
+                 <div class="post-description3">Price: ₱</div>
+                 <div class="buttonn">
+                   <a href="" class="buttonnn">None</a>
+             </div>
+           </div>
+         </a>
+        </div>
+
+        <!--topproducts 4-->
+        <div class="post-card3">
+            <img class="post-image3" src="e9194b08-2543-4c20-83dd-5dca00b573e0-removebg-preview.png" alt="Post Image">
+             <div class="post-content3">
+                 <div class="post-title3">Not Available!!!<br><br></div>
+                 <div class="post-description3">Price: ₱</div>
+                 <div class="buttonn">
+                   <a href="" class="buttonnn">None</a>
+             </div>
+           </div>
+         </a>
+        </div>
+
+
+
+  
+        <h3>.</h3>
+        
+        <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <br><br>
+          <h4>Mercantile Shop</h4>
+          <a href="ABOUTUS.html">About Us</a>
+          <a href="SHOPRULES.html">Shop Rules</a> 
+        </div>
+        <div class="footer__link--items">
+          <br><br>
+          <h4>Navigation</h4>
+          <a href="BOOKS.html">Books</a>
+          <a href="TOYS.html">Toys</a> <a href="SALE.html">Sale</a>
+        </div>
+      </div>
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <br><br>
+          <h4>Shop</h4>
+          <a href="https://shopee.ph/bleujg?page=0&shopCollection=157786297">Mercantile at Shopee</a> 
+        </div>
+      </div>
+    </div>
+    <section class="social__media">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="Mercantile Shop.html" id="footer__logo">
+              <img src="e9194b08-2543-4c20-83dd-5dca00b573e0-removebg-preview.png" alt="Logo" id="image"> Mercantile Shop
+            </a>
+          </div>
+
+          <p class="website__rights">© 2024. All rights reserved.</p>
+        <div class="social__icons">
+          <a
+            class="social__icon--link"
+            href=""
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href=""
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href=""
+            target="_blank"
+            aria-label="Youtube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href=""
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href=""
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    
+</body>
+</html>

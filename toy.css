@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nitti', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    font-family: 'Nitti', sans-serif;
+    color: #374C7A;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+    padding-top: 40px;
+}
+h2 {
+    font-family: 'Nitti', sans-serif;
+    color: #374C7A;
+    text-align: left;
+    margin: 20px;
+    font-size: 36px;
+}
+h3 {
+    font-family: 'Nitti', sans-serif;
+    color: #ffffff00;
+    text-align: left;
+    margin: 20px;
+    font-size: 36px;
+    padding-top: 550px;
+}
+/*NAVBAR 1*/
+.navbar {
+    background: #ffffff;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navigationbar {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#navbarlogo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #374C7A 0%, #4837ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Agbalumo', sans-serif;
+}
+#image {
+    width: 70px; 
+    height: auto;
+    margin-right: 0.5rem;
+}
+/*SEARCH BAR*/
+.navbarsearch {
+    margin-right: 20px; 
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+}
+.searchinput {
+    border: none;
+    border-bottom: 1px solid #374C7A;
+    padding: 10px 20px; 
+    margin-right: 10px;
+    font-size: 1rem;
+    width: 400px; /* panghaba*/
+}
+.searchbutton {
+    background-color: #374C7A;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.searchbutton:hover {
+    background-color: #4837ff;
+    transition: all 0.3s ease;
+}
+/* NAV BAR 2 */
+.navbar2 {
+    background: #374C7A;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.2rem; 
+    position: sticky;
+    top: 70px; 
+    z-index: 998;
+}
+.navbarcontainer {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.navbar-link {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 100px; 
+    margin: 0 5px; 
+    text-transform: uppercase; 
+}
+.navbar-link:hover {
+    color:  #374C7A;
+    background-color: rgb(255, 255, 255); 
+    transition: all 0.3s ease;
+    height: 40px;
+}
+
+
+
+.post-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 18px;
+    transition: transform 0.5s ease-in-out;
+    float: left;
+}
+/*ung hover pag trip mo ibalik*/
+.post-image {
+    width: 100%;
+    height: 300px;
+}
+.post-content {
+    padding: 20px;
+}
+.post-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(45, 49, 88);
+}
+.post-description {
+    font-size: 14px;
+    color: #666;     
+}
+/*BUTTON 1*/
+.button {
+    text-align: center;
+    margin-top: 10px;
+}
+.button1 {
+    display: inline-block;
+    padding: 8px 106px;
+    background-color: #374C7A;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.button1:hover {
+    background-color: #4837ff;
+    transition: background-color 0.3s;
+}
+/*toys*/
+.post-card2 {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 18px;
+    transition: transform 0.5s ease-in-out;
+    float: left;
+}
+/*ung hover pag trip mo ibalik*/
+.post-image2 {
+    width: 100%;
+    height: 300px;
+}
+.post-content2 {
+    padding: 20px;
+}
+.post-title2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(45, 49, 88);
+}
+.post-description2 {
+    font-size: 14px;
+    color: #666;     
+}
+
+/* Slideshow */
+.slideshow-container {
+    max-width: 100%; 
+    position: relative;
+    margin: auto;
+    height: 300px;
+}
+.mySlides {
+    display: none;
+    width: 100%; 
+}
+.mySlides img {
+    width: 100%; 
+    height: 350px;
+    object-fit: cover; 
+}
+/*buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #333844;
+    font-weight: bold;
+    font-size: 38px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1;
+}
+.prev {
+    left: 90px; 
+}
+.next {
+    right: 90px; 
+}
+.prev:hover, .next:hover {
+    background-color:  #374c7a49;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/* Footer CSS */
+.footer__container {
+    background-color: #353e53;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer__logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Agbalumo', sans-serif;
+  }
+  
+  .footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__link--wrapper {
+    display: flex;
+  }
+  
+  .footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 66px; /* Adjusted margin */
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__link--items h4 {
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+  
+  .footer__link--items > h4 {
+    color: #fff;
+  }
+  
+  .footer__link--items a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+  }
+  
+  .footer__link--items a:hover {
+    color: #e9e9e9;
+    transition: 0.3s ease-out;
+  }
+  
+  /* Social Icons */
+  .social__icon--link {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .social__media {
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+  }
+  
+  .social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+  }
+  
+  .social__logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .website__rights {
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 820px) {
+    .footer__links {
+      padding-top: 2rem;
+    }
+  
+    #footer__logo {
+      margin-bottom: 2rem;
+    }
+  
+    .website__rights {
+      margin-bottom: 2rem;
+    }
+  
+    .footer__link--wrapper {
+      flex-direction: column;
+    }
+  
+    .social__media--wrap {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer__link--items {
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+  
